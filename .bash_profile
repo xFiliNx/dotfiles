@@ -1,0 +1,1 @@
+/usr/home/filin/devel/dotfiles/.bash/.bash_profile
