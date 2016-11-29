@@ -1,1 +1,0 @@
-/usr/home/filin/devel/dotfiles/.bash/.bashrc
