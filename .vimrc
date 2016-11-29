@@ -192,7 +192,7 @@ let g:netrw_banner    = 0
 
 " -+- vim-airline
 
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='zenburn'
 "let g:airline_enable_fugitive=1
