@@ -1,0 +1,1 @@
+/usr/home/filin/devel/dotfiles/.vim/autoload/plug.vim
