@@ -193,6 +193,7 @@ let g:netrw_banner    = 0
 " -+- vim-airline
 
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='zenburn'
 "let g:airline_enable_fugitive=1
 "let g:airline_enable_syntastic=1
@@ -212,7 +213,7 @@ let g:slime_target = "tmux"
 
 " -+- NeoComplete:
 
-Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neocomplete'
 let g:neocomplete#enable_at_startup=1
 let g:neocomplete#enable_smart_case=1
 let g:neocomplete#force_overwrite_completefunc=1
@@ -225,7 +226,7 @@ endif
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets', {'for': ['ruby', 'vim'] }
 "Plug 'honza/vim-snippets'
-
+let g:neosnippet#disable_runtime_snippets = { "_": 1, }
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
@@ -237,9 +238,9 @@ endif
 
 " -+- Rainbow parentheses:
 
-Plug 'amdt/vim-niji'
-" let g:niji_matching_filetypes = ['clojure', 'ruby']
-" let g:niji_use_legacy_colours = 1
+Plug 'vim-scripts/vim-niji'
+ let g:niji_matching_filetypes = ['clojure', 'ruby']
+ let g:niji_use_legacy_colours = 1
 
 " -+- html/haml/slim/jade/css/sass/scss/less:
 
@@ -261,8 +262,6 @@ Plug 'mattn/emmet-vim',           { 'for': ['html','xhtml','css','sass','scss','
 au FileType html,css,sass,scss,less imap <expr><F4>     emmet#expandAbbrIntelligent("\<tab>")
 au FileType html,css,sass,scss,less imap <expr>jk       emmet#expandAbbrIntelligent("\<tab>")
 au FileType html                    imap <C-\>          <CR><CR><Esc>ki<Tab>
-
-Plug 'amdt/vim-niji'
 
 Plug 'kablamo/VimDebug'
 
