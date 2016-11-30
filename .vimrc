@@ -37,8 +37,11 @@ let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 1
 let g:solarized_termcolors=256
 
+set noswapfile
+
 " Нумерация строк
 set nu
+:nmap <C-N> :set invnumber<CR>
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -83,7 +86,7 @@ set iskeyword=@,a-z,A-Z,48-57,_,128-175,192-255
 "endif
 
 
-set colorcolumn=80 "Показывать полосу ширины документа
+"set colorcolumn=80 "Показывать полосу ширины документа
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
