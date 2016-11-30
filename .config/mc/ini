@@ -206,11 +206,7 @@ classic_progressbar=true
 
 horizontal_split=0
 vertical_equal=1
-<<<<<<< HEAD
-left_panel_size=75
-=======
 left_panel_size=93
->>>>>>> 7e1181eca5e3e4b558e03391d678745479338abc
 horizontal_equal=1
 top_panel_size=79
 
