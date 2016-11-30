@@ -49,7 +49,7 @@
 	#if [ -f /usr/local/bin/grc ]; then
         alias ping="grc --colour=auto ping"
         alias ls="grc --colour=auto ls"
-        alias traceroute="grc --colour=auto traceroute"
+        #alias traceroute="grc --colour=auto traceroute"
         alias make="grc --colour=auto make"
         alias diff="grc --colour=auto diff"
         alias cvs="grc --colour=auto cvs"
