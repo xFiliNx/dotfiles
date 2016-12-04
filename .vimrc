@@ -154,6 +154,12 @@ endif " has("autocmd")
 
 call plug#begin('~/.vim/plugged')
 
+" Find files
+Plug 'kien/ctrlp.vim'
+
+" Check syntax
+Plug 'vim-syntastic/syntastic'
+
 " Make sure you use single quotes
 Plug 'junegunn/vim-easy-align'
 
