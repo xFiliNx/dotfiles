@@ -154,6 +154,14 @@ endif " has("autocmd")
 
 call plug#begin('~/.vim/plugged')
 
+
+" git changes
+Plug 'airblade/vim-gitgutter'
+"Plug 'mhinz/vim-signify'
+
+" change plugin
+Plug 'chrisbra/changesPlugin'
+
 " Find files
 Plug 'kien/ctrlp.vim'
 
