@@ -55,7 +55,7 @@ set wrap " (no)wrap - динамический (не)перенос длинны
 set linebreak " переносить целые слова
 set matchpairs+=<:> " показывать совпадающие скобки для HTML-тегов
 set autoread " перечитывать изменённые файлы автоматически
-set confirm " использовать диалоги вместо сообщений об ошибках
+"set confirm " использовать диалоги вместо сообщений об ошибках
 set clipboard=unnamed " во избежание лишней путаницы использовать системный буфер обмена вместо буфера Vim
 set history=128 " хранить больше истории команд
 set undolevels=2048 " хранить историю изменений числом N
@@ -396,7 +396,7 @@ let g:pymode_rope_autoimport = 1
 " документация
 let g:pymode_doc = 1
 let g:pymode_doc_bind = 'H'
-let g:pymode_doc_key = 'K'
+"let g:pymode_doc_key = 'K'
 " проверка кода
 let g:pymode_lint = 1
 let g:pymode_lint_checker = "pyflakes,pep8"
