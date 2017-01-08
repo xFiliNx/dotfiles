@@ -75,6 +75,8 @@ map Q gq
 "256 цветов
 set t_Co=256
 
+set langmap=!\\"№\\;%?*ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;!@#$%&*`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+
 " Список используемых кодировок для автоматического их определения
 set fileencodings=utf-8,koi8-r,cp1251,latin1,cp866
 
@@ -110,12 +112,12 @@ au BufWinEnter *.* silent loadview " при открытии - восстано�
 
 "Удалять пустые пробелы на концах строк при открытии файла
 "" Удалить пробелы в конце строк (frantsev)
-function! RemoveTrailingSpaces()
-   normal! mzHmy
-   execute '%s:\s\+$::ge'
-   normal! 'yzt`z
-endfunction
-autocmd BufEnter *.* :call RemoveTrailingSpaces()
+"function! RemoveTrailingSpaces()
+"   normal! mzHmy
+"   execute '%s:\s\+$::ge'
+"   normal! 'yzt`z
+"endfunction
+"autocmd BufEnter *.* :call RemoveTrailingSpaces()
 
 
 "НАСТРОЙКИ ПОИСКА ТЕКСТА В ОТКРЫТЫХ ФАЙЛАХ
@@ -376,8 +378,50 @@ imap <F7> <Plug>vCoolorI
 
 noremap <leader>W :w !sudo tee %<CR>
 
+Plug 'majutsushi/tagbar'
+nnoremap <F2> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+
 Plug 'klen/python-mode'	        " Python mode (docs, refactor, lints, highlighting, run and ipdb and more)
-Plug 'davidhalter/jedi-vim'		" Jedi-vim autocomplete plugin
+let g:pymode = 1
+let g:pymode_warnings = 0
+let g:pymode_trim_whitespaces = 1
+let g:pymode_run = 1
+let g:pymode_run_bind = '<F9>'
+
+let g:pymode_rope = 1
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_autoimport = 1
+" документация
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'H'
+let g:pymode_doc_key = 'K'
+" проверка кода
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+let g:pymode_lint_ignore="E501,W601,C0110"
+let g:pymode_lint_on_fly = 1
+let g:pymode_lint_cwindow = 1
+" провека кода после сохранения
+let g:pymode_lint_write = 1
+" поддержка virtualenv
+let g:pymode_virtualenv = 1
+" установка breakpoints
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_key = '<leader>b'
+" подстветка синтаксиса
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+" отключить autofold по коду
+let g:pymode_folding = 0
+" возможность запускать код
+let g:pymode_run = 1
+
+
+"Plug 'davidhalter/jedi-vim'		" Jedi-vim autocomplete plugin
 Plug 'mitsuhiko/vim-jinja'		" Jinja support for vim
 Plug 'mitsuhiko/vim-python-combined'  " Combined Python 2/3 for Vim)
 
