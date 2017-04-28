@@ -72,4 +72,4 @@ function ff() {
 #    echo -e "ХАЯ!"
 #}
 #trap _exit EXIT
-screenfetch
+neofetch
