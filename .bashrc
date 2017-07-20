@@ -20,7 +20,7 @@
     export EDITOR=vim
     export VIEWER=vim
 
-	#shopt -s checkwinsize
+	shopt -s checkwinsize
 
 	LINE_VERTICAL="\342\224\200"
 	LINE_CORNER_1="\342\224\214"
