@@ -185,7 +185,7 @@ Plug 'nsf/gocode', { 'tag': 'go.weekly.2012-03-13', 'rtp': 'vim' }
 " Plugin outside ~/.vim/plugged with post-update hook
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
-Plug 'perl-support.vim'
+"Plug 'perl-support.vim'
 let g:Perl_Perl = '/usr/bin/perl'
 Plug 'vim-perl/vim-perl'
 Plug 'jaxbot/semantic-highlight.vim'
